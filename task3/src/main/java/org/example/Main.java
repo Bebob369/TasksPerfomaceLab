@@ -43,9 +43,7 @@ public class Main {
     }
 
     public static void replaceValueMethod(JsonArray childArray, JsonElement idFromValues, String valueFromValues) {
-//        if (idFromValues.toString().equals("110")) {
-//            System.out.println();
-//        }
+
         for (int i = 0; i < childArray.size(); i++) {
             JsonElement idFromTests = childArray.get(i).getAsJsonObject().get("id");
             if (idFromValues.equals(idFromTests)) {
